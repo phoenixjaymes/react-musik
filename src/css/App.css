@@ -1,0 +1,146 @@
+body {
+  background: url('http://phoenixjaymes.com/assets/img/labs/music/bg_music_black-320.gif') center center no-repeat fixed #000;
+  color: #fff;
+}
+
+main {
+  margin-bottom: 60px;
+  margin-top: 80px;
+}
+
+li {
+  list-style: none;
+}
+
+.bg-red {
+  background: url('http://phoenixjaymes.com/assets/img/labs/music/bg_music_red-320.gif') center center no-repeat fixed #b00;
+}
+
+.btn-yellow {
+  background: #e5e500;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+
+.media-item-box {
+  display: grid;
+  grid-template-columns: auto 40px;
+  font-size: .8rem;
+}
+
+
+/***** Collapse *****/
+.collapse {
+  position: relative;
+}
+
+.collapse.show {
+  display: block;
+}
+
+.collapse.hide {
+  display: none;
+}
+
+.group-label {
+  background: #211;
+  background: url('http://phoenixjaymes.com/assets/img/labs/music/bg_music_dark_red-320.gif') center center no-repeat fixed #250000;
+  cursor: pointer;
+  border-bottom: 1px dotted #fff;
+  padding: 0 10px 5px 10px;
+}
+
+.group-label span {
+  display: inline-block;
+  width: 80%;
+}
+
+.arrowDown::after, 
+.arrowUp::after {
+  display: inline-block;
+  text-align: right;
+  width: 20%;
+}
+
+.arrowDown::after {
+  content: "\25BC";
+}
+
+.arrowUp::after {
+  content: "\25B2";
+}
+
+/***** item list *****/
+.item-list-li {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  font-size: .9rem;
+  padding-top: 7px;
+  padding-bottom: 5px;
+}
+
+.item-list-li__img {
+  line-height: 0;
+  padding: 0;
+  flex: 0 0 50px;
+}
+
+.item-list-li__data {
+  flex: 1 1;
+  padding-left: 10px;
+}
+
+.item-list-li__extra {
+  flex: 0 0 30px;
+
+  text-align: center;
+}
+
+.item-list-li__extra span {
+  /* display: flex;
+  justify-content: center;
+  align-self: center; */
+
+  /* height: 30px; */
+}
+
+
+
+.item-list-li a {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.item-list-li span.heading {
+  font-weight: bold;
+}
+
+/***** Jumbotron *****/
+.jumbo {
+  background: url('http://phoenixjaymes.com/assets/img/labs/music/bg_music_red-320.gif') center center no-repeat fixed #b00;
+}
+
+.jumbo h1 {
+  color: #e5e500;
+}
+
+/***** list-container *****/
+.list-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 508px;
+}
+
+
+/***** Details Modal *****/
+.music-details {
+  position: fixed;
+  left: 0;
+  top: 100px;
+
+  background: red;
+  height: 500px;
+  width: 100%;
+}
