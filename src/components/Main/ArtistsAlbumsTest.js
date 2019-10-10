@@ -5,6 +5,7 @@ import { Container } from 'react-bootstrap';
 // import SongsContainer from './SongsContainer';
 
 import SongList from './SongList';
+import SvgComponent from './SvgComponent';
 
 // import albums from '../../data/albums';
 
@@ -61,7 +62,7 @@ class ArtistsAlbumsTest extends Component {
 
     return (
       <Container as="section">
-        <h1 className="text-center">{artistName}</h1>
+        <SvgComponent title={artistName} />
         {dataContainers}
       </Container>
     );
