@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import withContext from '../Context';
 
-const ArtistsItem = ({ data, context }) => (
+const ArtistsItem = ({ data }) => (
   <li className="item-list-li">
     <div className="item-list-li__img">
       <img
@@ -19,9 +19,8 @@ const ArtistsItem = ({ data, context }) => (
         <span className="heading">{data.artist}</span>
       </Link>
 
-      <span onClick={() => context.actions.showDetailsModal(data.id)}>+++</span>
-
       <br />
+
       <Link to={`/artist-albums/${data.id}`}>
         {data.numOfAlbums}
         {data.numOfAlbums > 1 ? ' Albums, ' : ' Album, ' }
@@ -39,7 +38,6 @@ const ArtistsItem = ({ data, context }) => (
 
 ArtistsItem.propTypes = {
   data: PropTypes.shape().isRequired,
-  context: PropTypes.shape(),
 };
 
 export default withContext(ArtistsItem);
