@@ -10,8 +10,6 @@ export class Provider extends Component {
     albumGroups: [],
     songGroups: [],
     genreGroups: [],
-    showDetails: false,
-    showDetailsId: '',
     loading: true,
     error: false,
   }
@@ -52,18 +50,9 @@ export class Provider extends Component {
     }
   }
 
-  showDetailsModal = (id) => {
-    const { showDetails } = this.state;
-console.log('show/hide details for id: ', id);
-    this.setState({
-      showDetails: !showDetails,
-      showDetailsId: id,
-    });
-  }
-
   render() {
     const {
-      artistGroups, albumGroups, songGroups, genreGroups, showDetails, showDetailsId,
+      artistGroups, albumGroups, songGroups, genreGroups,
     } = this.state;
     const { children } = this.props;
     const value = {
@@ -71,11 +60,6 @@ console.log('show/hide details for id: ', id);
       albumGroups,
       songGroups,
       genreGroups,
-      showDetails,
-      showDetailsId,
-      actions: {
-        showDetailsModal: this.showDetailsModal,
-      },
     };
 
     return (
