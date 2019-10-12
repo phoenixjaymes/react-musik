@@ -43,11 +43,15 @@ class ArtistsAlbums extends Component {
   }
 
   renderLoading = () => (
-    <p>Loading ...</p>
+    <Container as="section">
+      <p className="list-container">Loading ...</p>
+    </Container>
   );
 
   renderError = () => (
-    <p>Sorry there was an error loading your page.</p>
+    <Container as="section">
+      <p className="list-container">Sorry there was an error loading your page.</p>
+    </Container>
   );
 
   renderContainers = () => {
