@@ -5,6 +5,8 @@ import ListContainer from './ListContainer';
 import Loading from './Loading';
 import LoadingError from './LoadingError';
 
+import withContext from '../Context';
+
 class GroupContainer extends Component {
   state = {
     loading: true,
@@ -13,10 +15,17 @@ class GroupContainer extends Component {
   }
 
   componentDidMount() {
-    const { groups } = this.props;
-    const data = groups.map(obj => (
-      { ...obj, isOpen: false }
-    ));
+    const { groups, context } = this.props;
+    const { groupToOpen } = context;
+
+
+    const data = groups.map((obj) => {
+      if (obj.group === groupToOpen) {
+        return { ...obj, isOpen: true };
+      }
+      return { ...obj, isOpen: false };
+    });
+
     this.setState({
       groups: data,
       loading: false,
@@ -47,7 +56,9 @@ class GroupContainer extends Component {
 
   renderAlbums = () => {
     const { groups } = this.state;
-    const { groupType } = this.props;
+    const { groupType, context } = this.props;
+    const { setGroupToOpen } = context.actions;
+
     const groupList = groups.map((item, index) => (
       <li key={item.id}>
         <ListContainer
@@ -57,6 +68,7 @@ class GroupContainer extends Component {
           groupList={item.list}
           isOpen={item.isOpen}
           handleToggle={() => this.toggleListAt(index)}
+          setGroupToOpen={setGroupToOpen}
         />
       </li>
     ));
@@ -85,6 +97,7 @@ class GroupContainer extends Component {
 }
 
 GroupContainer.propTypes = {
+  context: PropTypes.shape(),
   groups: PropTypes.arrayOf(PropTypes.object),
   groupType: PropTypes.string,
 };
@@ -93,4 +106,4 @@ GroupContainer.defaultProps = {
   groupType: 'artist',
 };
 
-export default GroupContainer;
+export default withContext(GroupContainer);
