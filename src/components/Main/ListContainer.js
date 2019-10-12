@@ -19,6 +19,13 @@ class ListContainer extends Component {
   }
 
   componentDidMount() {
+    const { isOpen, groupType } = this.props;
+
+    if (isOpen === true && groupType === 'song') {
+      this.getDataFromDb();
+    } else if (isOpen === true && groupType !== 'song') {
+      this.getDataFromProps();
+    }
   }
 
   // Fetches data for songs
@@ -81,8 +88,16 @@ class ListContainer extends Component {
   }
 
   handleButtonClick = () => {
-    const { handleToggle, isOpen, groupType } = this.props;
+    const {
+      handleToggle, isOpen, groupType, group, setGroupToOpen,
+    } = this.props;
+
     handleToggle();
+    if (isOpen === true) {
+      setGroupToOpen('');
+    } else {
+      setGroupToOpen(group);
+    }
 
     if (isOpen === false && groupType === 'song') {
       this.getDataFromDb();
@@ -154,6 +169,7 @@ ListContainer.propTypes = {
   groupList: PropTypes.arrayOf(PropTypes.object),
   handleToggle: PropTypes.func.isRequired,
   isOpen: PropTypes.bool,
+  setGroupToOpen: PropTypes.func,
 };
 
 export default ListContainer;
