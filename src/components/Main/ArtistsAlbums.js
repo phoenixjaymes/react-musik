@@ -42,6 +42,12 @@ class ArtistsAlbums extends Component {
       });
   }
 
+  handleBackClick = () => {
+    const { history } = this.props;
+
+    history.goBack();
+  }
+
   renderLoading = () => (
     <Container as="section">
       <p className="list-container">Loading ...</p>
@@ -65,7 +71,11 @@ class ArtistsAlbums extends Component {
     ));
 
     return (
-      <Container as="section">
+      <Container as="section" className="artists-albums">
+        <div className="artists-albums__div">
+          <button className="artists-albums__btn-back" type="button" onClick={this.handleBackClick}>Back</button>
+        </div>
+        
         <SvgComponent title={artistName} />
         {dataContainers}
       </Container>
