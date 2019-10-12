@@ -10,6 +10,7 @@ export class Provider extends Component {
     albumGroups: [],
     songGroups: [],
     genreGroups: [],
+    groupToOpen: 'a',
     loading: true,
     error: false,
   }
@@ -50,9 +51,13 @@ export class Provider extends Component {
     }
   }
 
+  setGroupToOpen = (groupToOpen) => {
+    this.setState({ groupToOpen });
+  }
+
   render() {
     const {
-      artistGroups, albumGroups, songGroups, genreGroups,
+      artistGroups, albumGroups, songGroups, genreGroups, groupToOpen,
     } = this.state;
     const { children } = this.props;
     const value = {
@@ -60,6 +65,10 @@ export class Provider extends Component {
       albumGroups,
       songGroups,
       genreGroups,
+      groupToOpen,
+      actions: {
+        setGroupToOpen: this.setGroupToOpen,
+      },
     };
 
     return (
