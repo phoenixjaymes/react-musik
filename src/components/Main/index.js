@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+
 import Home from './Home';
 import FavsLists from './FavsLists';
 import Artists from './Artists';
@@ -22,10 +23,10 @@ const Main = () => (
     <Route exact path="/" component={Home} />
     <Route path="/favs-lists" component={FavsLists} />
     <Route path="/artists" component={ArtistsWithContext} />
-    <Route path="/artist-albums/:id" render={({ match }) => <ArtistsAlbums type="all" match={match} />} />
+    <Route path="/artist-albums/:id" render={({ match, history }) => <ArtistsAlbums type="all" match={match} history={history} />} />
 
     <Route path="/albums" component={AlbumsWithContext} />
-    <Route path="/albums-single/:id" render={({ match }) => <ArtistsAlbums type="single" match={match} />} />
+    <Route path="/albums-single/:id" render={({ match, history }) => <ArtistsAlbums type="single" match={match} history={history} />} />
 
     <Route path="/album-songs" component={AlbumSongs} />
 
