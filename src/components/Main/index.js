@@ -22,10 +22,10 @@ const Main = () => (
     <Route exact path="/" component={Home} />
     <Route path="/favs-lists" component={FavsLists} />
     <Route path="/artists" component={ArtistsWithContext} />
-    <Route path="/artist-albums/:id" render={({ match }) => <ArtistsAlbums type="all" matchObj={match} />} />
+    <Route path="/artist-albums/:id" render={({ match }) => <ArtistsAlbums type="all" match={match} />} />
 
     <Route path="/albums" component={AlbumsWithContext} />
-    <Route path="/albums-single/:id" render={({ match }) => <ArtistsAlbums type="single" matchObj={match} />} />
+    <Route path="/albums-single/:id" render={({ match }) => <ArtistsAlbums type="single" match={match} />} />
 
     <Route path="/album-songs" component={AlbumSongs} />
 
