@@ -17,12 +17,12 @@ class ArtistsAlbums extends Component {
   }
 
   componentDidMount() {
-    const { type, matchObj } = this.props;
+    const { type, match } = this.props;
     let fetchUrl;
     if (type === 'all') {
-      fetchUrl = `http://phoenixjaymes.com/assets/data/music/get-artist-albums.php?id=${matchObj.params.id}`;
+      fetchUrl = `http://phoenixjaymes.com/assets/data/music/get-artist-albums.php?id=${match.params.id}`;
     } else {
-      fetchUrl = `http://phoenixjaymes.com/assets/data/music/get-artist-albums.php?type=single&id=${matchObj.params.id}`;
+      fetchUrl = `http://phoenixjaymes.com/assets/data/music/get-artist-albums.php?type=single&id=${match.params.id}`;
     }
 
     fetch(fetchUrl)
@@ -87,7 +87,7 @@ class ArtistsAlbums extends Component {
 }
 
 ArtistsAlbums.propTypes = {
-  matchObj: PropTypes.shape({
+  match: PropTypes.shape({
     isExact: PropTypes.bool,
     params: PropTypes.object,
     path: PropTypes.string,
