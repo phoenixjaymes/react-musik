@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Container } from 'react-bootstrap';
 
-// import SongsContainer from './SongsContainer';
-
 import SongList from './SongList';
 import SvgComponent from './SvgComponent';
 
-// import albums from '../../data/albums';
+import backArrow from './arrow-thin-left.svg';
 
 class ArtistsAlbums extends Component {
   state = {
@@ -73,7 +71,7 @@ class ArtistsAlbums extends Component {
     return (
       <Container as="section" className="artists-albums">
         <div className="artists-albums__div">
-          <button className="artists-albums__btn-back" type="button" onClick={this.handleBackClick}>Back</button>
+          <img src={backArrow} className="artists-albums__btn-back" role="button" onClick={this.handleBackClick} alt="back arrow" />
         </div>
         
         <SvgComponent title={artistName} />
