@@ -9,7 +9,7 @@ const GenresItem = ({ data }) => (
         width={50}
         height={50}
         className="mr-3"
-        src="http://phoenixjaymes.com/assets/img/labs/music/placeholder-artist-64.png"
+        src="https://phoenixjaymes.com/assets/img/labs/music/placeholder-artist-64.png"
         alt="Generic placeholder"
       />
 
@@ -17,9 +17,9 @@ const GenresItem = ({ data }) => (
         {data.name}
         <br />
         {data.numOfAlbums}
-        {data.numOfAlbums > 1 ? 'Albums, ' : 'Album, ' }
+        {data.numOfAlbums > 1 ? 'Albums, ' : 'Album, '}
         {data.numOfSongs}
-        {data.numOfSongs > 1 ? 'Songs' : 'Song' }
+        {data.numOfSongs > 1 ? 'Songs' : 'Song'}
       </p>
     </Link>
 

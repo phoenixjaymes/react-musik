@@ -10,7 +10,7 @@ const SongsItem = ({ data }) => (
       <img
         width={50}
         height={50}
-        src={`http://phoenixjaymes.com/assets/img/labs/music/${data.img}`}
+        src={`https://phoenixjaymes.com/assets/img/labs/music/${data.img}`}
         alt="Generic placeholder"
       />
     </div>

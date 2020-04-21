@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export const Context = React.createContext();
+Context.displayName = 'MusicContext';
 export const { Consumer } = Context;
 
 export class Provider extends Component {
@@ -10,7 +11,7 @@ export class Provider extends Component {
     albumGroups: [],
     songGroups: [],
     genreGroups: [],
-    groupToOpen: 'a',
+    groupToOpen: '',
     loading: true,
     error: false,
   }
@@ -29,7 +30,7 @@ export class Provider extends Component {
         loading: false,
       });
     } else {
-      fetch('http://phoenixjaymes.com/assets/data/music/get-music.php')
+      fetch('https://phoenixjaymes.com/assets/data/music/get-music.php')
         .then(reponse => reponse.json())
         .then((responseData) => {
           sessionStorage.setItem('musicCategories', JSON.stringify(responseData.data));

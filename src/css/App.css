@@ -1,5 +1,5 @@
 body {
-  background: url('http://phoenixjaymes.com/assets/img/labs/music/bg_music_black-320.gif') center center no-repeat fixed #000;
+  background: url('https://phoenixjaymes.com/assets/img/labs/music/bg_music_black-320.gif') center center no-repeat fixed #000;
   color: #fff;
 }
 
@@ -13,7 +13,7 @@ li {
 }
 
 .bg-red {
-  background: url('http://phoenixjaymes.com/assets/img/labs/music/bg_music_red-320.gif') center center no-repeat fixed #b00;
+  background: url('https://phoenixjaymes.com/assets/img/labs/music/bg_music_red-320.gif') center center no-repeat fixed #b00;
 }
 
 .btn-yellow {
@@ -45,7 +45,7 @@ li {
 
 .group-label {
   background: #211;
-  background: url('http://phoenixjaymes.com/assets/img/labs/music/bg_music_dark_red-320.gif') center center no-repeat fixed #250000;
+  background: url('https://phoenixjaymes.com/assets/img/labs/music/bg_music_dark_red-320.gif') center center no-repeat fixed #250000;
   cursor: pointer;
   border-bottom: 1px dotted #fff;
   padding: 0 10px 5px 10px;
@@ -119,7 +119,7 @@ li {
 
 /***** Jumbotron *****/
 .jumbo {
-  background: url('http://phoenixjaymes.com/assets/img/labs/music/bg_music_red-320.gif') center center no-repeat fixed #b00;
+  background: url('https://phoenixjaymes.com/assets/img/labs/music/bg_music_red-320.gif') center center no-repeat fixed #b00;
   margin-left: auto;
   margin-right: auto;
   max-width: 690px;

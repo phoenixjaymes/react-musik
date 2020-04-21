@@ -18,9 +18,9 @@ class ArtistsAlbums extends Component {
     const { type, match } = this.props;
     let fetchUrl;
     if (type === 'all') {
-      fetchUrl = `http://phoenixjaymes.com/assets/data/music/get-artist-albums.php?id=${match.params.id}`;
+      fetchUrl = `https://phoenixjaymes.com/assets/data/music/get-artist-albums.php?id=${match.params.id}`;
     } else {
-      fetchUrl = `http://phoenixjaymes.com/assets/data/music/get-artist-albums.php?type=single&id=${match.params.id}`;
+      fetchUrl = `https://phoenixjaymes.com/assets/data/music/get-artist-albums.php?type=single&id=${match.params.id}`;
     }
 
     fetch(fetchUrl)
@@ -73,7 +73,7 @@ class ArtistsAlbums extends Component {
         <div className="artists-albums__div">
           <img src={backArrow} className="artists-albums__btn-back" role="button" onClick={this.handleBackClick} alt="back arrow" />
         </div>
-        
+
         <SvgComponent title={artistName} />
         {dataContainers}
       </Container>

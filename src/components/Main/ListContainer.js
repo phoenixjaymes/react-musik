@@ -43,7 +43,7 @@ class ListContainer extends Component {
       loading: true,
     });
 
-    fetch(`http://phoenixjaymes.com/assets/data/music/get-songs.php?alpha=${group}`)
+    fetch(`https://phoenixjaymes.com/assets/data/music/get-songs.php?alpha=${group}`)
       .then(reponse => reponse.json())
       .then((responseData) => {
         this.setState({

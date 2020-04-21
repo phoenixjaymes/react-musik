@@ -8,7 +8,7 @@ const AlbumsItem = ({ data }) => (
       <img
         width={50}
         height={50}
-        src={`http://phoenixjaymes.com/assets/img/labs/music/${data.img}`}
+        src={`https://phoenixjaymes.com/assets/img/labs/music/${data.img}`}
         alt="Generic placeholder"
       />
     </div>
@@ -21,7 +21,7 @@ const AlbumsItem = ({ data }) => (
       <Link to={`/artist-albums/${data.artistId}`}>{data.artist}</Link>
       <br />
       {data.numOfSongs}
-      {data.numOfSongs > 1 ? ' Songs' : ' Song' }
+      {data.numOfSongs > 1 ? ' Songs' : ' Song'}
     </div>
 
     <div className="item-list-li__extra">

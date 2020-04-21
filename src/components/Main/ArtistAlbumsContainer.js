@@ -14,7 +14,7 @@ class AlbumsContainer extends Component {
   }
 
   componentDidMount() {
-    fetch('http://phoenixjaymes.com/assets/data/music/get-artist-albums.php')
+    fetch('https://phoenixjaymes.com/assets/data/music/get-artist-albums.php')
       .then(reponse => reponse.json())
       .then((responseData) => {
         this.setState({

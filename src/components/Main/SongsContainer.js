@@ -14,7 +14,7 @@ class SongsCcontainer extends Component {
   }
 
   componentDidMount() {
-    fetch('http://phoenixjaymes.com/assets/data/music/get-songs.php')
+    fetch('https://phoenixjaymes.com/assets/data/music/get-songs.php')
       .then(reponse => reponse.json())
       .then((responseData) => {
         this.setState({
