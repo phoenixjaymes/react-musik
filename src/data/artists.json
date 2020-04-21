@@ -1,0 +1,46 @@
+{
+  "data" : [
+    {
+      "id": "1",
+      "name": "A-Ha",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "4",
+      "numOfSongs": "48"
+    },
+    {
+      "id": "2",
+      "name": "Der neue Kinderwächter",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "5",
+      "numOfSongs": "25"
+    },
+    {
+      "id": "3",
+      "name": "Journey",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "5",
+      "numOfSongs": "60"
+    },
+    {
+      "id": "4",
+      "name": "Madonna",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "12",
+      "numOfSongs": "144"
+    },
+    {
+      "id": "5",
+      "name": "Nanny Girl",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "1",
+      "numOfSongs": "1"
+    },
+    {
+      "id": "6",
+      "name": "Nanny Man",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "1",
+      "numOfSongs": "14"
+    }
+  ]
+}

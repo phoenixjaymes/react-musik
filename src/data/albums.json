@@ -1,0 +1,84 @@
+{
+  "data" : {
+    "id": "1",
+    "artist": "Pet Shop Boys",
+    "img": "placeholder-artist-64.png",
+
+    "albums":   [
+      {
+        "id": "1",
+        "title": "Actually",
+        "artist": "Pet Shop Boys",
+        "img": "placeholder-artist-64.png",
+        "numOfSongs": "10",
+        "songs": [
+          {
+            "id": "1",
+            "title": "Leave in Silence"
+          },
+          {
+            "id": "2",
+            "title": "A Broken Frame"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Agenda",
+        "artist": "Pet Shop Boys",
+        "img": "placeholder-artist-64.png",
+        "numOfSongs": "12",
+        "songs": [
+          {
+            "id": "1",
+            "title": "Leave in Silence"
+          },
+          {
+            "id": "2",
+            "title": "A Broken Frame"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Alternative",
+        "artist": "Pet Shop Boys",
+        "img": "placeholder-artist-64.png",
+        "numOfSongs": "8",
+        "songs": [
+          {
+            "id": "1",
+            "title": "Leave in Silence"
+          },
+          {
+            "id": "2",
+            "title": "A Broken Frame"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Like a Virgin",
+        "artist": "Madonna",
+        "img": "placeholder-artist-64.png",
+        "numOfSongs": "8",
+        "songs": [
+          {
+            "id": "1",
+            "title": "Leave in Silence"
+          },
+          {
+            "id": "2",
+            "title": "A Broken Frame"
+          }
+        ]
+      }
+    ]
+  }
+  
+  
+  
+
+
+
+}

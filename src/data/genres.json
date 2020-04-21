@@ -1,0 +1,46 @@
+{
+  "data" : [
+    {
+      "id": "1",
+      "name": "Alternative",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "4",
+      "numOfSongs": "48"
+    },
+    {
+      "id": "2",
+      "name": "Alternative",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "5",
+      "numOfSongs": "25"
+    },
+    {
+      "id": "3",
+      "name": "Audio Book",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "5",
+      "numOfSongs": "60"
+    },
+    {
+      "id": "4",
+      "name": "Country",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "12",
+      "numOfSongs": "144"
+    },
+    {
+      "id": "5",
+      "name": "Dance",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "1",
+      "numOfSongs": "1"
+    },
+    {
+      "id": "6",
+      "name": "Pop",
+      "img": "placeholder-artist-64.png",
+      "numOfAlbums": "1",
+      "numOfSongs": "14"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "I Am the Doctor",
+      "artist": "John Smith",
+      "img": "placeholder-artist-64.png"
+    },
+    {
+      "id": "2",
+      "name": "What, what, what",
+      "artist": "John Smith",
+      "img": "placeholder-artist-64.png"
+    },
+    {
+      "id": "3",
+      "name": "Would you like a Jellybaby?",
+      "artist": "John Smith",
+      "img": "placeholder-artist-64.png"
+    },
+    {
+      "id": "4",
+      "name": "Borderline",
+      "artist": "Madonna",
+      "img": "placeholder-artist-64.png"
+    },
+    {
+      "id": "5",
+      "name": "Holiday",
+      "artist": "Madonna",
+      "img": "placeholder-artist-64.png"
+    },
+    {
+      "id": "6",
+      "name": "Fever",
+      "artist": "Madonna",
+      "img": "placeholder-artist-64.png"
+    },
+    {
+      "id": "7",
+      "name": "Nichts von Alldem",
+      "artist": "Rosenstolz",
+      "img": "placeholder-artist-64.png"
+    },
+    {
+      "id": "8",
+      "name": "Alles Brennt",
+      "artist": "Johannes Oerding",
+      "img": "placeholder-artist-64.png"
+    }
+  ]
+}
